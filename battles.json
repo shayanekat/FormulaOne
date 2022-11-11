@@ -7,7 +7,7 @@
         ],
 
         "pilots": [
-            ["ver", "per", "ham", "sai", "per", "rus"],
+            ["ver", "per", "ham", "sai", "lec", "rus"],
             ["oco", "gas", "nor", "pia"]
         ]
     }
