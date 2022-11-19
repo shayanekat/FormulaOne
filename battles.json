@@ -1,14 +1,14 @@
 {
     "battles": {
         "teams": [
-            ["ferrari", "mercedes", "redbull"],
-            ["alpine", "mclaren"],
-            ["aplhatauri", "astonmartin", "alfaromeo", "williams", "haas"]
+            {"ferrari": ["ferrari", "mercedes", "redbull"]},
+            {"alpine": ["alpine", "mclaren"]},
+            {"alfaromeo": ["aplhatauri", "astonmartin", "alfaromeo", "williams", "haas"]}
         ],
 
         "pilots": [
-            ["ver", "per", "ham", "sai", "lec", "rus"],
-            ["oco", "gas", "nor", "pia"]
+            {"lec": ["ver", "per", "ham", "sai", "lec", "rus"]},
+            {"oco": ["oco", "gas", "nor", "pia"]}
         ]
     }
 }
