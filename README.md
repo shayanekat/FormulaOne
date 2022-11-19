@@ -1,19 +1,19 @@
-# Application d'analyse de données de Formule 1
+# Formula 1 data analysis application
 
-Ceci est un projet qui visent à apprendre à faire de la datascience sur un projet réel et en faisant un maximum de tache différent
-Cela me permet de faire un projet réel et de lier deux de mes passions. De cette manière, je reste sur ce projet qui tiens longtemps
+This is a project that aims to learn to do some datascience on real project et doing a maximum of different tasks
+It will help me to do a real project and to link two of my passions, so I can stay on this project for a long time
 
 ## 2022
 
-C'est la première saison que je fais. J'ai cherché une source de données, je les scrape, fait du processing, de la datavisualisation et de l'analyse
+It is the first season I do. I searched an interesting data source, I scrap these data, do some processing and then make a visualisation and an analyse.
 
-J'ai fait les visualisations qui me semblaient intéressantes et j'ai apporté quelques mise à jour au fil de l'année
+I made the graphs and charts that seems interesting for these data and I've added some updates during the year
 
-Cependant, certaines données et datavisualisation étaient inutile car les données dépendaient trop du circuit (à savoir la vitesse et le temps au tour)
+Unfortunately, some of the data and graphs are useless because they depend too much on the circuit (speed and lap time).
 
-Fin 2022 j'ai commencé à réfléchir à ce que je veux faire pour la saison 2023 et qui sera mieux que ce que j'ai fait en 2022
+End of 2022, I started thinking of what I want to do for the 2023 season and which would be better than what I did on the previous season.
 
-cela m'a permis de faire une vrai planification avec les données disponibles, et les types de graphs les plus adaptés ainsi que le processing que j'ai à faire
+It allowed me to do some plans with the avalaible data, the graphs and charts adapted  and the processing I have to do
 
 ## 2023
 
