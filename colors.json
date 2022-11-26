@@ -1,0 +1,45 @@
+{
+    "pilot": {
+        "bot": "#900000",
+        "zho": "#500000",
+
+        "dev": "#2b4562",
+        "tsu": "#356cac",
+
+        "gas": "#0090ff",
+        "oco": "#70c2ff",
+
+        "alo": "#006f62",
+        "str": "#25a617",
+
+        "lec": "#dc0000",
+        "sai": "#ff8181",
+
+        "mag": "#ffffff",
+        "hul": "#cacaca",
+
+        "pia": "#ff8700",
+        "nor": "#eeb370",
+
+        "ham": "#00d2be",
+        "rus": "#24ffff",
+
+        "ver": "#0600ef",
+        "per": "#716de2",
+
+        "alb": "#005aff",
+        "sar": "#012564"
+    },
+    "team": {
+        "mercedes": "#00d2be",
+        "ferrari": "#dc0000",
+        "red bull": "#0600ef",
+        "mclaren": "#ff8700",
+        "alpine": "#0090ff",
+        "aston martin": "#006f62",
+        "alfa romeo": "#900000",
+        "alphatauri": "#2b4562",
+        "haas": "#ffffff",
+        "williams": "#005aff"
+    }
+}
