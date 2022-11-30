@@ -33,11 +33,11 @@
     "team": {
         "mercedes": "#00d2be",
         "ferrari": "#dc0000",
-        "red bull": "#0600ef",
+        "redbull": "#0600ef",
         "mclaren": "#ff8700",
         "alpine": "#0090ff",
-        "aston martin": "#006f62",
-        "alfa romeo": "#900000",
+        "astonmartin": "#006f62",
+        "alfaromeo": "#900000",
         "alphatauri": "#2b4562",
         "haas": "#ffffff",
         "williams": "#005aff"

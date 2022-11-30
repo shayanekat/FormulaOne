@@ -3,7 +3,7 @@
         "teams": [
             {"ferrari": ["ferrari", "mercedes", "redbull"]},
             {"alpine": ["alpine", "mclaren"]},
-            {"alfaromeo": ["aplhatauri", "astonmartin", "alfaromeo", "williams", "haas"]}
+            {"alfaromeo": ["alphatauri", "astonmartin", "alfaromeo", "williams", "haas"]}
         ],
 
         "pilots": [
