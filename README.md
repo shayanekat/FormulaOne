@@ -1,6 +1,20 @@
-# Application d'analyse des données de Formule 1 saison 2022
-celle que je peux récupérer en tout cas
+# Formula 1 data analysis application
 
-Mis a part les données à mettre à jour, ce programme est réutilisable pour les prochaines saisons
+This is a project that aims to learn to do some datascience on real project et doing a maximum of different tasks
+It will help me to do a real project and to link two of my passions, so I can stay on this project for a long time
 
-Les données sont soient tapées à la main, soit via le site offciel de la F1
+## 2022
+
+It is the first season I do. I searched an interesting data source, I scrap these data, do some processing and then make a visualisation and an analyse.
+
+I made the graphs and charts that seems interesting for these data and I've added some updates during the year
+
+Unfortunately, some of the data and graphs are useless because they depend too much on the circuit (speed and lap time).
+
+End of 2022, I started thinking of what I want to do for the 2023 season and which would be better than what I did on the previous season.
+
+It allowed me to do some plans with the avalaible data, the graphs and charts adapted  and the processing I have to do
+
+## 2023
+
+haven't started yet

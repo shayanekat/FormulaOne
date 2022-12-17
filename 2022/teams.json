@@ -5,8 +5,8 @@
     "mclaren": ["ric", "nor"],
     "alpine": ["alo", "oco"],
     "alphatauri": ["gas", "tsu"],
-    "astonmartin": ["vet", "str"],
-    "williams": ["lat", "alb"],
+    "astonmartin": ["vet", "str", "hul"],
+    "williams": ["lat", "alb", "dev"],
     "alfaromeo": ["bot", "zho"],
-    "haas": ["mag", "sch"]
+    "haas": ["mag", "msc"]
 }
