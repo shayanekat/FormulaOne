@@ -1,0 +1,14 @@
+{
+    "battles": {
+        "teams": [
+            {"ferrari": ["ferrari", "mercedes", "redbull"]},
+            {"alpine": ["alpine", "mclaren"]},
+            {"alfaromeo": ["alphatauri", "astonmartin", "alfaromeo", "williams", "haas"]}
+        ],
+
+        "pilots": [
+            {"lec": ["ver", "per", "ham", "sai", "lec", "rus"]},
+            {"oco": ["oco", "gas", "nor", "pia"]}
+        ]
+    }
+}
