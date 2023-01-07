@@ -15,6 +15,8 @@ End of 2022, I started thinking of what I want to do for the 2023 season and whi
 
 It allowed me to do some plans with the avalaible data, the graphs and charts adapted  and the processing I have to do
 
+![Example of chart](2022/example.png "Example of chart")
+
 ## 2023
 
 haven't started yet
