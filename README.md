@@ -19,4 +19,4 @@ It allowed me to do some plans with the avalaible data, the graphs and charts ad
 
 ## 2023
 
-haven't started yet
+For this year, I have prepared the charts, the upgrades, I did some design. This time, I start the season prepared.
