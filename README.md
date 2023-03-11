@@ -13,7 +13,7 @@ Unfortunately, some of the data and graphs are useless because they depend too m
 
 End of 2022, I started thinking of what I want to do for the 2023 season and which would be better than what I did on the previous season.
 
-It allowed me to do some plans with the avalaible data, the graphs and charts adapted  and the processing I have to do
+It allowed me to do some plans with the avalaible data, the graphs and charts adapted and the processing I have to do
 
 ![Example of chart](2022/example.png "Example of chart")
 
