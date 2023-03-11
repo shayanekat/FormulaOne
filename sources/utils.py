@@ -1,0 +1,17 @@
+"""
+    This module contains all global variables and functions
+"""
+
+# COLORS
+TAB_BAR_BACKGROUND = "#051aa6"
+NOT_SELECTED_TAB = "#a6051a"
+SELECTED_TAB = "#ff0000"
+HOVERED_TAB = "#ca030b"
+
+TITLE_BAR_BACKGROUND = "#0546c8"
+TITLE_GRADIENT_0 = "#a6051a"
+TITLE_GRADIENT_1 = "#051aa6"
+
+BODY_BACKGROUND = "#010731"
+
+WIDGET_BACKGROUND = "#0546c8"
