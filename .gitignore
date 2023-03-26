@@ -6,3 +6,4 @@ cache.txt
 id2code.json
 other_data.json
 sources/__pycache__
+*.pyc

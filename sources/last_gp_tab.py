@@ -5,6 +5,7 @@
 from dash import html
 
 from . import utils
+from .backend import last_gp
 
 
 def LastGPTab() -> html.Div:
@@ -17,9 +18,11 @@ def LastGPTab() -> html.Div:
         # body
         html.Div(id=utils.LAST_GP_BODY, className=utils.BODY_CLASS, children=[
             # left widget
-            html.Div(id=utils.LAST_GP_LEFT_WIDGET, className=utils.WIDGET_CLASS, children=[]),  # TODO: add the charts
+            html.Div(id=utils.LAST_GP_LEFT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=last_gp.pilot_comparison()),
 
             # right widget
-            html.Div(id=utils.LAST_GP_RIGHT_WIDGET, className=utils.WIDGET_CLASS, children=[])  # TODO: add the charts
+            html.Div(id=utils.LAST_GP_RIGHT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=last_gp.lap_data())
         ])
     ])

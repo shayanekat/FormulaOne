@@ -16,10 +16,14 @@ def main():
     app.title = "Formula 1 Dashboard"
     app.layout = html.Div(
         dcc.Tabs(id="tabs", value="tab-1", children=[
-            dcc.Tab(label="Dernier GP", value="tab-last-gp", id=utils.LAST_GP_TAB, className="tab_bar", children=LastGPTab()),
-            dcc.Tab(label="Général", value="tab-general", id=utils.GENERAL_TAB, className="tab_bar", children=GeneralTab()),
-            dcc.Tab(label="Batailles", value="tab-battles", id=utils.BATTLES_TAB, className="tab_bar", children=BattlesTab()),
-            dcc.Tab(label="Circuits", value="tab-circuits", id=utils.CIRCUITS_TAB, className="tab_bar", children=CircuitsTab())]
+            dcc.Tab(label="Dernier GP", value="tab-last-gp", id=utils.LAST_GP_TAB,
+                    className="tab_bar", children=LastGPTab()),
+            dcc.Tab(label="Général", value="tab-general", id=utils.GENERAL_TAB, className="tab_bar", 
+                    children=GeneralTab()),
+            dcc.Tab(label="Batailles", value="tab-battles", id=utils.BATTLES_TAB,
+                    className="tab_bar", children=BattlesTab()),
+            dcc.Tab(label="Circuits", value="tab-circuits", id=utils.CIRCUITS_TAB,
+                    className="tab_bar", children=CircuitsTab())]
         )
     )
 
