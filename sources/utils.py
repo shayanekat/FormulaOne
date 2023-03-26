@@ -19,6 +19,12 @@ BODY_BACKGROUND = "#010731"
 WIDGET_BACKGROUND = "#0546c8"
 
 # ===== IDS =====
+# tab bar
+LAST_GP_TAB = "last-gp-tab"
+GENERAL_TAB = "general-tab"
+BATTLES_TAB = "battles-tab"
+CIRCUITS_TAB = "circuits-tab"
+
 # last GP tab
 LAST_GP_TITLE_BAR = "last-gp-title-bar"
 LAST_GP_BODY = "last-gp-body"

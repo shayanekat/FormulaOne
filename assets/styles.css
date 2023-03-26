@@ -9,3 +9,7 @@
 .title{
     background: #0546c8;
 }
+
+.tab_bar:hover{
+    background-color: #ca030b;
+}
