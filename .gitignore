@@ -5,3 +5,4 @@ cache.txt
 .idea
 id2code.json
 other_data.json
+*.pyc
