@@ -50,3 +50,20 @@ CIRCUITS_RIGHT_WIDGET = "circuits-right-widget"
 WIDGET_CLASS = "widget"
 BODY_CLASS = "body"
 TITLE_CLASS = "title"
+
+# ===== STYLES =====
+WIDGET_STYLE = {
+    "background-color": WIDGET_BACKGROUND,
+    "overflow": "scroll",
+    "display": "inline-block",
+    "height": "100vh",
+    "width": "50%",
+}
+
+BODY_STYLE = {
+    "background-color": BODY_BACKGROUND
+}
+
+TITLE_BAR_STYLE = {
+    "background-color": TITLE_BAR_BACKGROUND
+}

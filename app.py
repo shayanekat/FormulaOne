@@ -24,7 +24,7 @@ def main():
                     className="tab_bar", children=BattlesTab()),
             dcc.Tab(label="Circuits", value="tab-circuits", id=utils.CIRCUITS_TAB,
                     className="tab_bar", children=CircuitsTab())]
-        )
+        ), style=utils.BODY_STYLE
     )
 
     app.run()

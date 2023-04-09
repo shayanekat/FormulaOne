@@ -17,6 +17,7 @@ data_all["improvement"] = data_all["grid"] - data_all["result"]
 
 # last gp
 last_gp = data_all.groupby("pilot").tail(1)
+last_gp_circuit = last_gp["circuit_name"].unique()[0]
 
 # colors
 with open("sources/utilites/colors.json", "r", encoding="utf8") as file:
