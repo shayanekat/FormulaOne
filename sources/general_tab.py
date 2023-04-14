@@ -5,6 +5,7 @@
 from dash import html
 
 from . import utils
+from .backend import general
 
 
 def GeneralTab() -> html.Div:
@@ -13,9 +14,11 @@ def GeneralTab() -> html.Div:
         # body
         html.Div(id=utils.GENERAL_BODY, className=utils.BODY_CLASS, children=[
             # left widget
-            html.Div(id=utils.GENERAL_LEFT_WIDGET, className=utils.WIDGET_CLASS, children=[]),  # TODO: add the charts
+            html.Div(id=utils.GENERAL_LEFT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=general.cumulative_points(), style=utils.WIDGET_STYLE),
 
             # right widget
-            html.Div(id=utils.GENERAL_RIGHT_WIDGET, className=utils.WIDGET_CLASS, children=[])  # TODO: add the charts
-        ])
-    ])
+            html.Div(id=utils.GENERAL_RIGHT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=general.heatmaps(), style=utils.WIDGET_STYLE)
+        ], style=utils.BODY_STYLE)
+    ], style=utils.BODY_STYLE)
