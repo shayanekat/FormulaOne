@@ -5,6 +5,7 @@
 from dash import html
 
 from . import utils
+from .backend import circuit
 
 
 def CircuitsTab() -> html.Div:
@@ -13,9 +14,11 @@ def CircuitsTab() -> html.Div:
         # body
         html.Div(id=utils.CIRCUITS_BODY, className=utils.BODY_CLASS, children=[
             # left widget
-            html.Div(id=utils.CIRCUITS_LEFT_WIDGET, className=utils.WIDGET_CLASS, children=[]),  # TODO: add the charts
+            html.Div(id=utils.CIRCUITS_LEFT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=circuit.MainData(), style=utils.WIDGET_STYLE),
 
             # right widget
-            html.Div(id=utils.CIRCUITS_RIGHT_WIDGET, className=utils.WIDGET_CLASS, children=[])  # TODO: add the charts
+            html.Div(id=utils.CIRCUITS_RIGHT_WIDGET, className=utils.WIDGET_CLASS,
+                     children=circuit.CircuitData(), style=utils.WIDGET_STYLE)
         ])
     ])
