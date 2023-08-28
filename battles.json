@@ -7,7 +7,7 @@
 
         "pilots": {
             "lec": ["ver", "per", "ham", "sai", "lec", "rus", "str", "alo", "nor", "pia"],
-            "gas": ["oco", "gas", "tsu", "dev", "bot", "zho", "sar", "alb", "mag", "hul"]
+            "gas": ["oco", "gas", "tsu", "dev", "bot", "zho", "sar", "alb", "mag", "hul", "ric", "law"]
         }
     }
 }
