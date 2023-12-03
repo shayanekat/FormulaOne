@@ -20,3 +20,17 @@ It allowed me to do some plans with the avalaible data, the graphs and charts ad
 ## 2023
 
 For this year, I have prepared the charts, the upgrades, I did some design. This time, I start the season prepared.
+
+At the start of the season I was very hyped. I liked seeing the different charts filling but along the year.
+
+![ex1](2023/cumul_pilot.jpg "Example of chart")
+
+![ex2](2023/ex2.jpg "Another example")
+
+But after that, I realized that many of these charts where useless, And having to update all charts every time was very boring.
+
+I didn't even updates the charts on the lasts Grand Prix.
+
+## 2024
+
+For the 2024 season, I learn from my mistakes. I'll do something more simple using a python code instead of a notebook.
