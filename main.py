@@ -1,6 +1,9 @@
+import json
+
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from dash import Dash, Input, Output, callback, dcc, html
 from plotly.subplots import make_subplots
 
 import data_download
@@ -8,7 +11,7 @@ import data_download
 # data update
 ask = input("Voulez vous mettre à jour les données ? (y/n) ")
 if ask == "y":
-    YEAR = 2024
+    YEAR = 2023
     data_url, sprint_url = data_download.get_urls(YEAR)
     dataget = data_download.get_data_links(data_url)
     sprintget = data_download.get_data_links(sprint_url)
@@ -38,48 +41,29 @@ for i in data_points["index"].unique():
         data_team_points["circuit_name"].append(data_points[data_points["index"] == i]["circuit_name"].unique()[0])
 data_team_points = pd.DataFrame(data_team_points)
 
+with open("colors.json", encoding="utf8") as file:
+    colors = json.load(file)
 
 # generate graphs
-fig = make_subplots(rows=7, cols=1, subplot_titles=(
-    "rythme moyen par pilote",
-    "evolution du rythme",
-    "evolution des positions",
-    "points pilotes",
-    "point ecuries",
-    "evolution de la grille",
-    "evolution des resultats"
-    )
-)
+fig_pace = px.scatter(last_gp, x="pilot", y="average_lap_time", title="rythme moyen par pilote", template="plotly_dark")
+fig_pace_evol = px.line(df_lap, x="lap", y="time", title="evolution du rythme", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
+fig_pos_evol = px.line(df_lap, x="lap", y="position", title="evolution des positions", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"])
+fig_pilot_points = px.line(data_points, x="circuit_name", y="cum_points", title="points pilote", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
+fig_team_points = px.line(data_team_points, x="circuit_name", y="cum_points", title="points ecurie", template="plotly_dark", color="team") 
+fig_grid = px.line(df_data, x="circuit_name", y="grid", title="evolution de la grille", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
+fig_res = px.line(df_data, x="circuit_name", y="result", title="evolution des resultats", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
 
-fig.add_trace(
-    go.Scatter(x=last_gp["pilot"], y=last_gp["avg_lap_time"], name="rythme moyen par pilote"),
-    row=1, col=1)
+app = Dash("Formula 1 Data Analysis - 2024 Edition")
 
-fig.add_trace(
-    go.Line(x=last_gp["pilot"], y=last_gp["average_lap_time"], name="evolution du rythme"),
-    row=2, col=1)
+app.layout = html.Div([
+    dcc.Graph(id="pace", figure=fig_pace),
+    dcc.Graph(id="pace_evol", figure=fig_pace_evol),
+    dcc.Graph(id="pos_evol", figure=fig_pos_evol),
+    dcc.Graph(id="pilot_points", figure=fig_pilot_points),
+    dcc.Graph(id="team_points", figure=fig_team_points),
+    dcc.Graph(id="grid", figure=fig_grid),
+    dcc.Graph(id="res", figure=fig_res)
+])
 
-fig.add_trace(
-    go.Line(x=last_gp["pilot"], y=last_gp["position"], name="evolution des positions"),
-    row=3, col=1)
-
-fig.add_trace(
-    go.Line(x=data_points["circuit_name"], y=data_points["cum_points"], name="points pilotes"),
-    row=4, col=1)
-
-fig.add_trace(
-    go.Line(x=data_team_points["circuit_name"], y=data_team_points["cum_points"], name="points ecuries"),
-    row=5, col=1)
-
-fig.add_trace(
-    go.Line(x=df_data["circuit_name"], y=df_data["grid"], name="evolution de la grille"),
-    row=6, col=1)
-
-fig.add_trace(
-    go.Line(x=df_data["circuit_name"], y=df_data["result"], name="evolution des resultats"),
-    row=7, col=1)
-
-fig.update_layout(title_text="Analyse des données de F1 2024", template="plotly_dark")
-
-fig.show()
-    
+if __name__ == '__main__':
+    app.run(debug=True)
