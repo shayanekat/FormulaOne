@@ -11,7 +11,7 @@ import data_download
 # data update
 ask = input("Voulez vous mettre à jour les données ? (y/n) ")
 if ask == "y":
-    YEAR = 2023
+    YEAR = 2024
     data_url, sprint_url = data_download.get_urls(YEAR)
     dataget = data_download.get_data_links(data_url)
     sprintget = data_download.get_data_links(sprint_url)
