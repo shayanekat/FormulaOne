@@ -1,7 +1,7 @@
 {
     "pilot": {
-        "bot": "#900000",
-        "zho": "#500000",
+        "bot": "#009000",
+        "zho": "#005000",
 
         "dev": "#2b4562",
         "tsu": "#356cac",
@@ -16,12 +16,13 @@
 
         "lec": "#dc0000",
         "sai": "#ff8181",
+        "bea": "#ff8181",
 
         "mag": "#ffffff",
         "hul": "#cacaca",
 
-        "pia": "#ff8700",
-        "nor": "#eeb370",
+        "pia": "#eeb370",
+        "nor": "#ff8700",
 
         "ham": "#00d2be",
         "rus": "#24ffff",
@@ -39,7 +40,7 @@
         "mclaren": "#ff8700",
         "alpine": "#0090ff",
         "astonmartin": "#006f62",
-        "alfaromeo": "#900000",
+        "sauber": "#009000",
         "alphatauri": "#2b4562",
         "haas": "#ffffff",
         "williams": "#005aff"

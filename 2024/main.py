@@ -24,34 +24,36 @@ df_data = pd.read_json("data_2024.json")
 
 last_gp = df_data.groupby("pilot").tail(1)
 df_lap = pd.read_json("lap_data.json")
-dico = {pilot: df_lap.groupby("pilot").mean()["time"][pilot] for pilot in df_lap["pilot"].unique()}
+dico = df_lap.groupby("pilot")["time"].mean().to_dict()
 last_gp["average_lap_time"] = last_gp["pilot"].map(dico)
 
 data_points = df_data[["pilot", "points", "circuit_name"]].copy()
-data_points["cum_points"] = data_points.groupby("pilot").cumsum()
+data_points["cum_points"] = data_points.groupby("pilot")["points"].cumsum()
 data_points["index"] = data_points.groupby("pilot").cumcount()
 
-data_team_points = {"team": [], "points": [], "cum_points": [], "index": [], "circuit_name": []}
+data_team_points = {"team": [], "points": [], "circuit_name": []}
 for i in data_points["index"].unique():
     for team in data_download.teams.keys():
         data_team_points["team"].append(team)
         data_team_points["points"].append(data_points[data_points["index"] == i][data_points["pilot"].isin(data_download.teams[team])]["points"].sum())
-        data_team_points["cum_points"].append(data_points[data_points["index"] == i][data_points["pilot"].isin(data_download.teams[team])]["cum_points"].sum())
-        data_team_points["index"].append(i)
         data_team_points["circuit_name"].append(data_points[data_points["index"] == i]["circuit_name"].unique()[0])
 data_team_points = pd.DataFrame(data_team_points)
+data_team_points["cum_points"] = data_team_points.groupby("team")["points"].cumsum()
 
 with open("colors.json", encoding="utf8") as file:
     colors = json.load(file)
 
 # generate graphs
 fig_pace = px.scatter(last_gp, x="pilot", y="average_lap_time", title="rythme moyen par pilote", template="plotly_dark")
-fig_pace_evol = px.line(df_lap, x="lap", y="time", title="evolution du rythme", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
-fig_pos_evol = px.line(df_lap, x="lap", y="position", title="evolution des positions", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"])
-fig_pilot_points = px.line(data_points, x="circuit_name", y="cum_points", title="points pilote", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
-fig_team_points = px.line(data_team_points, x="circuit_name", y="cum_points", title="points ecurie", template="plotly_dark", color="team") 
-fig_grid = px.line(df_data, x="circuit_name", y="grid", title="evolution de la grille", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
-fig_res = px.line(df_data, x="circuit_name", y="result", title="evolution des resultats", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"]) 
+fig_pace_evol = px.line(df_lap, x="lap", y="time", title="evolution du rythme", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"], markers=True) 
+fig_pos_evol = px.line(df_lap, x="lap", y="position", title="evolution des positions", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"], markers=True)
+fig_pos_evol.update_yaxes(autorange="reversed")
+fig_pilot_points = px.line(data_points, x="circuit_name", y="cum_points", title="points pilote", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"], markers=True) 
+fig_team_points = px.line(data_team_points, x="circuit_name", y="cum_points", title="points ecurie", template="plotly_dark", color="team", color_discrete_map=colors["team"], markers=True) 
+fig_grid = px.line(df_data, x="circuit_name", y="grid", title="evolution de la grille", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"], markers=True) 
+fig_grid.update_yaxes(autorange="reversed")
+fig_res = px.line(df_data, x="circuit_name", y="result", title="evolution des resultats", template="plotly_dark", color="pilot", color_discrete_map=colors["pilot"], markers=True) 
+fig_res.update_yaxes(autorange="reversed")
 
 app = Dash("Formula 1 Data Analysis - 2024 Edition")
 

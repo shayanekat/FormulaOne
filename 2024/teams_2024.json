@@ -1,12 +1,12 @@
 {
     "redbull": ["ver", "per"],
     "mercedes": ["ham", "rus"],
-    "ferrari": ["lec", "sai"],
+    "ferrari": ["lec", "sai", "bea"],
     "mclaren": ["pia", "nor"],
     "alpine": ["gas", "oco"],
-    "alphatauri": ["tsu", "ric"],
+    "racingbulls": ["tsu", "ric"],
     "astonmartin": ["alo", "str"],
     "williams": ["sar", "alb"],
-    "alfaromeo": ["bot", "zho"],
+    "sauber": ["bot", "zho"],
     "haas": ["mag", "hul"]
 }

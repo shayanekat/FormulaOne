@@ -34,3 +34,11 @@ I didn't even updates the charts on the lasts Grand Prix.
 ## 2024
 
 For the 2024 season, I learn from my mistakes. I'll do something more simple using a python code instead of a notebook.
+
+It worked perfeclty, until the middle of the season, when my data source didn't provide the data anymore, and I stopped using this app for the remaining races of the year
+
+# 2025
+
+This time, I want to try using FastF1 python library for livetiming data.
+
+more global season data like points will be scrapped from internet
