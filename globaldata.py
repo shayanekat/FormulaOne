@@ -51,7 +51,7 @@ def update_data(race_year, race_index):
             for i in range(len(quali_data)):
                 record = {}
                 record["raceIndex"] = lastIndex
-                record["driver"] = quali_data[i]["Driver"]["code"].lower()
+                record["driver"] = quali_data[i]["Driver"]["code"]
                 record["quali"] = quali_data[i]["position"]
                 records.append(record)
             
@@ -60,13 +60,13 @@ def update_data(race_year, race_index):
             for i in range(len(standing_data)):
                 # find the corresponding record by driver
                 for j in range(len(records)):
-                    if records[j]["driver"] == standing_data[i]["Driver"]["code"].lower():
+                    if records[j]["driver"] == standing_data[i]["Driver"]["code"]:
                         records[j]["points"] = standing_data[i]["points"]
                         break
                 else:
                     record = {}
                     record["raceIndex"] = lastIndex
-                    record["driver"] = standing_data[i]["Driver"]["code"].lower()
+                    record["driver"] = standing_data[i]["Driver"]["code"]
                     records.append(record)
                     j = len(records) - 1
                 
@@ -77,13 +77,13 @@ def update_data(race_year, race_index):
             for i in range(len(result_data)):
                 # find the corresponding record by driver
                 for j in range(len(records)):
-                    if records[j]["driver"] == result_data[i]["Driver"]["code"].lower():
+                    if records[j]["driver"] == result_data[i]["Driver"]["code"]:
                         records[j]["result"] = result_data[i]["position"]
                         break
                 else:
                     record = {}
                     record["raceIndex"] = lastIndex
-                    record["driver"] = result_data[i]["Driver"]["code"].lower()
+                    record["driver"] = result_data[i]["Driver"]["code"]
                     records.append(record)
                     j = len(records) - 1
                 
