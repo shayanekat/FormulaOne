@@ -4,6 +4,8 @@ import time
 import pandas as pd
 import requests
 
+from racenameindex import RaceNameIndex
+
 DT = 1 # delay time in seconds to avoid API rate limit
 
 def update_data(race_year, race_index):
@@ -12,7 +14,6 @@ def update_data(race_year, race_index):
 
     # case no new data
     if race_index in df["raceIndex"].values:
-        print("No new data")
         print(race_index)
         print(df["raceIndex"].values)
 
@@ -27,6 +28,8 @@ def update_data(race_year, race_index):
         
         while lastIndex < race_index:
             lastIndex += 1
+            print(f"{lastIndex}/{race_index}")
+            time.sleep(DT)
             # get new data from API from last index to race_index (inclusive)
             # -> quali
             qualy_url = f"https://ergast.com/api/f1/{race_year}/{lastIndex}/qualifying.json"
@@ -78,6 +81,7 @@ def update_data(race_year, race_index):
                 for j in range(len(records)):
                     if records[j]["driver"] == result_data[i]["Driver"]["code"]:
                         records[j]["result"] = result_data[i]["position"]
+                        records[j]["team"] = result_data[i]["Constructor"]["name"]
                         break
                 else:
                     record = {}
@@ -87,13 +91,21 @@ def update_data(race_year, race_index):
                     j = len(records) - 1
                 
                 records[j]["result"] = result_data[i]["position"]
-            
+        
+            # append new data to df
+            for record in records:
+                df.loc[-1] = record
+                df.index = df.index + 1
+                df = df.sort_index()
+
         # save data to data.csv
         print("Saving data")
-        for record in records:
-            df.loc[-1] = record
-            df.index = df.index + 1
-            df = df.sort_index()
         df.to_csv("data2025.csv", index=False)
     
     return df
+
+if __name__ == "__main__":
+    year = 2024
+    index = RaceNameIndex.Zandvoort
+    df = update_data(year, index)
+    print(df)

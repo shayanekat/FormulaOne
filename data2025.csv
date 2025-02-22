@@ -1,21 +1,210 @@
-raceIndex,driver,standing,quali,result
-1,GAS,0,20,18
-1,OCO,0,19,17
-1,SAR,0,18,20
-1,ZHO,0,17,11
-1,BOT,0,16,19
-1,MAG,0,15,12
-1,RIC,0,14,13
-1,ALB,0,13,15
-1,STR,1,12,10
-1,TSU,0,11,14
-1,HUL,0,10,16
-1,HAM,6,9,7
-1,PIA,4,8,8
-1,NOR,8,7,6
-1,ALO,2,6,9
-1,PER,18,5,2
-1,SAI,15,4,3
-1,RUS,10,3,5
-1,LEC,12,2,4
-1,VER,26,1,1
+raceIndex,driver,standing,quali,result,team
+10,BEA,6,,,
+10,SAR,0,20,20,Williams
+10,ALB,2,19,18,Williams
+10,RIC,9,18,15,RB F1 Team
+10,TSU,19,17,19,RB F1 Team
+10,MAG,1,16,17,Haas F1 Team
+10,ZHO,0,15,13,Sauber
+10,STR,17,14,14,Aston Martin
+10,HUL,6,13,11,Haas F1 Team
+10,BOT,0,12,16,Sauber
+10,ALO,41,11,12,Aston Martin
+10,PIA,87,10,7,McLaren
+10,OCO,3,9,10,Alpine F1 Team
+10,PER,111,8,8,Red Bull
+10,GAS,5,7,9,Alpine F1 Team
+10,SAI,116,6,6,Ferrari
+10,LEC,148,5,5,Ferrari
+10,RUS,81,4,4,Mercedes
+10,HAM,70,3,3,Mercedes
+10,VER,219,2,1,Red Bull
+10,NOR,150,1,2,McLaren
+9,BEA,6,,,
+9,ZHO,0,20,15,Sauber
+9,HUL,6,19,11,Haas F1 Team
+9,OCO,2,18,10,Alpine F1 Team
+9,BOT,0,17,13,Sauber
+9,PER,107,16,18,Red Bull
+9,GAS,3,15,9,Alpine F1 Team
+9,MAG,1,14,12,Haas F1 Team
+9,SAR,0,13,20,Williams
+9,SAI,108,12,16,Ferrari
+9,LEC,138,11,19,Ferrari
+9,ALB,2,10,17,Williams
+9,STR,17,9,7,Aston Martin
+9,TSU,19,8,14,RB F1 Team
+9,HAM,55,7,4,Mercedes
+9,ALO,41,6,6,Aston Martin
+9,RIC,9,5,8,RB F1 Team
+9,PIA,81,4,5,McLaren
+9,NOR,131,3,2,McLaren
+9,VER,194,2,1,Red Bull
+9,RUS,69,1,3,Mercedes
+8,BEA,6,,,
+8,ZHO,0,20,16,Sauber
+8,BOT,0,19,13,Sauber
+8,PER,107,18,18,Red Bull
+8,SAR,0,17,15,Williams
+8,ALO,33,16,11,Aston Martin
+8,MAG,1,15,20,Haas F1 Team
+8,STR,11,14,14,Aston Martin
+8,RIC,5,13,12,RB F1 Team
+8,HUL,6,12,19,Haas F1 Team
+8,OCO,1,11,17,Alpine F1 Team
+8,GAS,1,10,10,Alpine F1 Team
+8,ALB,2,9,9,Williams
+8,TSU,19,8,8,RB F1 Team
+8,HAM,42,7,7,Mercedes
+8,VER,169,6,6,Red Bull
+8,RUS,54,5,5,Mercedes
+8,NOR,113,4,4,McLaren
+8,SAI,108,3,3,Ferrari
+8,PIA,71,2,2,McLaren
+8,LEC,138,1,1,Ferrari
+7,BEA,6,,,
+7,SAR,0,20,17,Williams
+7,ALO,33,19,19,Aston Martin
+7,MAG,1,18,12,Haas F1 Team
+7,ZHO,0,17,15,Sauber
+7,BOT,0,16,18,Sauber
+7,GAS,0,15,16,Alpine F1 Team
+7,ALB,0,14,20,Williams
+7,STR,11,13,9,Aston Martin
+7,OCO,1,12,14,Alpine F1 Team
+7,PER,107,11,8,Red Bull
+7,HUL,6,10,11,Haas F1 Team
+7,RIC,5,9,13,RB F1 Team
+7,HAM,35,8,6,Mercedes
+7,TSU,15,7,10,RB F1 Team
+7,RUS,44,6,7,Mercedes
+7,SAI,93,5,5,Ferrari
+7,LEC,113,4,3,Ferrari
+7,NOR,101,3,2,McLaren
+7,PIA,53,2,4,McLaren
+7,VER,161,1,1,Red Bull
+6,BEA,6,,,
+6,ZHO,0,20,14,Sauber
+6,MAG,1,19,19,Haas F1 Team
+6,RIC,5,18,15,RB F1 Team
+6,SAR,0,17,20,Williams
+6,BOT,0,16,16,Sauber
+6,ALO,33,15,9,Aston Martin
+6,ALB,0,14,18,Williams
+6,OCO,1,13,10,Alpine F1 Team
+6,GAS,0,12,12,Alpine F1 Team
+6,STR,9,11,17,Aston Martin
+6,TSU,14,10,7,RB F1 Team
+6,HUL,6,9,11,Haas F1 Team
+6,HAM,27,8,6,Mercedes
+6,RUS,37,7,8,Mercedes
+6,PIA,41,6,13,McLaren
+6,NOR,83,5,1,McLaren
+6,PER,103,4,4,Red Bull
+6,SAI,83,3,5,Ferrari
+6,LEC,98,2,3,Ferrari
+6,VER,136,1,2,Red Bull
+5,BEA,6,,,
+5,SAR,0,20,17,Williams
+5,TSU,7,19,19,RB F1 Team
+5,HAM,19,18,9,Mercedes
+5,MAG,1,17,16,Haas F1 Team
+5,ZHO,0,16,14,Sauber
+5,GAS,0,15,13,Alpine F1 Team
+5,ALB,0,14,12,Williams
+5,OCO,0,13,11,Alpine F1 Team
+5,RIC,0,12,18,RB F1 Team
+5,STR,9,11,15,Aston Martin
+5,BOT,0,10,20,Sauber
+5,HUL,4,9,10,Haas F1 Team
+5,RUS,33,8,6,Mercedes
+5,SAI,69,7,5,Ferrari
+5,LEC,76,6,4,Ferrari
+5,PIA,38,5,8,McLaren
+5,NOR,58,4,2,McLaren
+5,ALO,31,3,7,Aston Martin
+5,PER,85,2,3,Red Bull
+5,VER,110,1,1,Red Bull
+4,BEA,6,,,
+4,ZHO,0,20,18,Sauber
+4,SAR,0,19,17,Williams
+4,MAG,1,18,13,Haas F1 Team
+4,GAS,0,17,16,Alpine F1 Team
+4,STR,9,16,12,Aston Martin
+4,OCO,0,15,15,Alpine F1 Team
+4,ALB,0,14,20,Williams
+4,BOT,0,13,14,Sauber
+4,HUL,3,12,11,Haas F1 Team
+4,RIC,0,11,19,RB F1 Team
+4,TSU,7,10,10,RB F1 Team
+4,RUS,24,9,7,Mercedes
+4,LEC,59,8,4,Ferrari
+4,HAM,10,7,9,Mercedes
+4,PIA,32,6,8,McLaren
+4,ALO,24,5,6,Aston Martin
+4,SAI,55,4,3,Ferrari
+4,NOR,37,3,5,McLaren
+4,PER,64,2,2,Red Bull
+4,VER,77,1,1,Red Bull
+3,SAR,0,,,
+3,BEA,6,,,
+3,ZHO,0,19,15,Sauber
+3,RIC,0,18,12,RB F1 Team
+3,GAS,0,17,13,Alpine F1 Team
+3,HUL,3,16,9,Haas F1 Team
+3,OCO,0,15,16,Alpine F1 Team
+3,MAG,1,14,10,Haas F1 Team
+3,BOT,0,13,14,Sauber
+3,ALB,0,12,11,Williams
+3,HAM,8,11,18,Mercedes
+3,ALO,16,10,8,Aston Martin
+3,STR,9,9,6,Aston Martin
+3,TSU,6,8,7,RB F1 Team
+3,RUS,18,7,17,Mercedes
+3,PIA,28,6,4,McLaren
+3,LEC,47,5,2,Ferrari
+3,NOR,27,4,3,McLaren
+3,PER,46,3,5,Red Bull
+3,SAI,40,2,1,Ferrari
+3,VER,51,1,19,Red Bull
+2,SAI,15,,,
+2,ZHO,0,20,18,Sauber
+2,SAR,0,19,14,Williams
+2,GAS,0,18,20,Alpine F1 Team
+2,OCO,0,17,13,Alpine F1 Team
+2,BOT,0,16,17,Sauber
+2,HUL,1,15,10,Haas F1 Team
+2,RIC,0,14,16,RB F1 Team
+2,MAG,0,13,12,Haas F1 Team
+2,ALB,0,12,11,Williams
+2,BEA,6,11,7,Ferrari
+2,STR,1,10,19,Aston Martin
+2,TSU,0,9,15,RB F1 Team
+2,HAM,8,8,9,Mercedes
+2,RUS,18,7,6,Mercedes
+2,NOR,12,6,8,McLaren
+2,PIA,16,5,4,McLaren
+2,ALO,12,4,5,Aston Martin
+2,PER,36,3,2,Red Bull
+2,LEC,28,2,3,Ferrari
+2,VER,51,1,1,Red Bull
+1,GAS,0,20,18,Alpine F1 Team
+1,OCO,0,19,17,Alpine F1 Team
+1,SAR,0,18,20,Williams
+1,ZHO,0,17,11,Sauber
+1,BOT,0,16,19,Sauber
+1,MAG,0,15,12,Haas F1 Team
+1,RIC,0,14,13,RB F1 Team
+1,ALB,0,13,15,Williams
+1,STR,1,12,10,Aston Martin
+1,TSU,0,11,14,RB F1 Team
+1,HUL,0,10,16,Haas F1 Team
+1,HAM,6,9,7,Mercedes
+1,PIA,4,8,8,McLaren
+1,NOR,8,7,6,McLaren
+1,ALO,2,6,9,Aston Martin
+1,PER,18,5,2,Red Bull
+1,SAI,15,4,3,Ferrari
+1,RUS,10,3,5,Mercedes
+1,LEC,12,2,4,Ferrari
+1,VER,26,1,1,Red Bull
