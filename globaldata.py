@@ -11,8 +11,10 @@ def update_data(race_year, race_index):
     df = pd.read_csv("data2025.csv")
 
     # case no new data
-    if race_index in df.index:
+    if race_index in df["raceIndex"].values:
         print("No new data")
+        print(race_index)
+        print(df["raceIndex"].values)
 
     # case new data
     else:
@@ -22,9 +24,6 @@ def update_data(race_year, race_index):
             lastIndex = 0
         else:
             lastIndex = max(df["raceIndex"])
-        
-        # old data
-        strdata = df.to_dict()
         
         while lastIndex < race_index:
             lastIndex += 1
