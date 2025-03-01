@@ -14,8 +14,7 @@ def update_data(race_year, race_index):
 
     # case no new data
     if race_index in df["raceIndex"].values:
-        print(race_index)
-        print(df["raceIndex"].values)
+        print("No new data")
 
     # case new data
     else:
